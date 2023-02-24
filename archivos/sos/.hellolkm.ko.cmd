@@ -1,0 +1,1 @@
+cmd_/home/natalia/sos/hellolkm.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/natalia/sos/hellolkm.ko /home/natalia/sos/hellolkm.o /home/natalia/sos/hellolkm.mod.o;  true

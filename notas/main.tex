@@ -1,0 +1,231 @@
+\documentclass[12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{pdfpages}
+\usepackage{listings}
+
+\geometry{top=25mm,left=15mm,right=15mm,a4paper}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Lenguajes de Programación}
+\cfoot{Página \thepage\ de \pageref{LastPage}}
+
+\graphicspath{./}
+
+\begin{document}
+\includepdf{Portada.pdf}
+{\color{blue} \section*{Resumen Examen 1.}}
+
+{\color{blue} \subsubsection*{Conceptos e Introducción.}}
+\vspace{-0.5em}
+
+\textbf{Lenguaje de Programación:} \\
+Herramienta para comunicarnos con la computadora, es la terna: $L=<P_L , D_L , [.]_L>$
+donde $P_L$ es el conjunto de programa de $L \neq \emptyset$, donde $D_L$ es el conjunto
+de datos de $L$(entrada y salida) y $[.]_L$ es la función de $L$ tal que recibe un programa, recibe
+datos de $L$ y regresa un conjunto de datos y regresa un conjunto de datos.\\
+Los elementos que lo conforman son:\\
+\begin{enumerate}
+    \item \textbf{Sintaxis}: Manera o forma de escribir las cosas en un lenguaje. por ejemplo: (int=entero,integer...) el como esta diseñado.
+    \item \textbf{Semantica}: Significado que le damos a la forma de escribirlo o a la sintaxis, en otras palabras es dado un int, su significado
+    por ejemplo $a[25]$ es un arreglo en Java.
+    \item \textbf{Idioms}: Reglas no escritas del lenguaje, reglas que todos conocemos, se usan pero no son necesarias como usar $i, j$ en fors anidados
+    \item \textbf{Biblioteca}: Rutinas para hacer más facil la forma de programar. 
+\end{enumerate}
+
+{\color{blue} \subsubsection*{Analisis del codigo}}
+\vspace{-0.5em}
+
+\textbf{Analisis del codigo y su transformación de Codigo Fuente a Ejecutable.} \\
+A continuación la siguiente  imagen representa el analisis:\\
+
+\includegraphics[scale=.60]{images/analisis.png} \\
+
+\begin{enumerate}
+    \item \textbf{Analisis Lexico}: Recibe lexemas y separa el programa en lexemas ( int a = 3, son 4 lexemas)
+    \item \textbf{Analisis Sintactico}: Verifica que este bien escrita la expresión en un lenguaje (if pasa, i f no pasa)
+    \item \textbf{Analisis Semantico}: Da significado a la expresión escrita en el programa 
+\end{enumerate}
+
+{\color{blue} \subsubsection*{Tipos de Lenguajes.}}
+\vspace{-0.5em}
+\begin{enumerate}
+    \item \textbf{Compilado:} Genera codigo ejecutable al pasar el analisis, con el ejecutable no se necesita compilar. \textbf{(Usa compilador)} 
+    \item \textbf{Interpretado:} Pasa el analisis línea por línea, no hay ejecutable se debe ejecutar siempre. \textbf{(Usa interprete)}
+\end{enumerate}
+
+{\color{blue} \subsubsection*{Notación.}}
+\vspace{-0.5em}
+\begin{enumerate}
+    \item \textbf{Infija:} \\
+    $3 + 4$
+    \item \textbf{Postfija:}\\ 
+    $3$ $4$ + 
+    \item \textbf{Prefija Parentizada:} \\
+    (+ $3$ $4$) 
+\end{enumerate}
+Sus recorrios usando \textbf{Notación Árbol} es la siguiente:\\
+\begin{enumerate}
+    \item \textbf{Infija:} \\
+    Hijo izquierdo, lee su padre y va al hijo derecho.
+    \item \textbf{Postfija:}\\ 
+    Inicia en hijo izquierdo, sube y baja al derecho y sube de nuevo a su raiz o padre para leer la operación (recorrido lento por esperar parametro)
+    \item \textbf{Prefija Parentizada:} \\
+    Inicia en la raíz, cheamos valor de hijo izquierdo y  despues derecho (Dado su operador, sabemos el tipo a leer).  
+\end{enumerate}
+Dentro de los tipos tambien tenemos:\\
+
+\begin{enumerate}
+    \item \textbf{Anfitrión:} El lenguaje en el que está escrito el \textbf{compilador}.
+    \item \textbf{Objetivo:} El lenguaje en el que se generó el \textbf{codigo ejecutable}.
+\end{enumerate}
+
+
+{\color{blue} \subsubsection*{Paradigmas de Lenguajes de Programación.}}
+\vspace{-0.5em}
+Se refiere a la manera de pensar, de estructurar respuestas. Se clasifican: \\
+
+\begin{enumerate}
+    \item \textbf{IMPERATIVO}
+    \begin{enumerate}
+        \item \textbf{Eestructurado:} Usa funciones dentro de bloques, un ejemplo es \textbf{Pascal}.
+        \item \textbf{Orientado a objetos:} Usa objetos, clases y metodos, un ejemplo es \textbf{Java}
+    \end{enumerate}
+    \item \textbf{DECLARATIVO}
+    \begin{enumerate}
+        \item \textbf{Funcional:} Usa funciones o procedimientos, un elemplo es \textbf{Racket}.
+        \item \textbf{Lógico:} Usa Hechos y reglas un ejemplo lo es \textbf{PROLOG}
+    \end{enumerate}
+\end{enumerate}
+
+{\color{blue} \subsubsection*{Calculo Lambda.}}
+\vspace{-0.5em}
+
+Es el lenguaje de programación universal más pequeño y consiste en un lenguaje formal para describir terminos y definir funciones 
+usando una unica regla de transformación llamada $\beta$-reducción que permite sustituir variables. 
+Un ejemplo es:\\
+$\lambda x. e$ donde se denota la función que $x \to e$ asocia a cada valor de $x$ la expresión $e$.
+\\
+
+{\color{blue} \subsubsection*{Notación de variables libres y ligadas.}}
+\vspace{-0.5em}
+
+En la abstracción $\lambda x.e$  el operador $\lambda$ liga a la variable $x$ en $e$, se ve de la siguiente forma:\\
+$(\lambda x.e)$ $x$ es \textbf{De ligado}, $e$ es \textbf{Ligada} a la de ligado.\\
+
+{\color{blue} \subsubsection*{Alpha equivalencia.}}
+\vspace{-0.5em}
+La definición es: $\lambda V.E = \lambda W.E [V:= W]$ esta es una $\alpha$-equivalencia
+
+{\color{blue} \subsubsection*{Beta reducción.}}
+\vspace{-0.5em}
+Lo que expresa es la idea de aplicación de función, esta regla se define como:\\
+$(\lambda x.e)s \to_\beta e[x:=s]$.\\
+O sea se sustituyen todas las apariciones de $x$ por $s$ en $e$\\ donde $(\lambda x.e)$ es el \textbf{REDEX}
+y $e[x:=s]$ es el \textbf{Reducto}\\
+
+
+{\color{blue} \subsubsection*{Algoritmo de sustitución.}}
+\vspace{-0.5em}
+Nos dice en pocas palabras que dada una \textbf{expresión} vamos a sustituir la \textbf{variable} que aparece entro de esta por su \textbf{valor}.\\
+como: Expr[Var:=valor]. Este algoritmo es de una complejidad no muy eficiente $O(n)^2$\\
+
+{\color{blue} \subsubsection*{Contexto y alcance de una variable.}}
+\vspace{-0.5em}
+\textbf{Contexto:} Es donde vive la variable de clase.\\
+\textbf{Ambiente:} Implementación de la variable en el stack\\
+\textbf{Alcance de variables:} Región de programa donde una \textbf{Variable ligada} alcanza su valor de una \textbf{de Ligado}.\\
+Para esto definiremos:\\
+\begin{enumerate}
+    \item \textbf{Instancia Ligada o acotada:} Instancia o variable que alcanza su valor de una de ligado, esta contenida en su alcance.
+    \item \textbf{Instancia de Ligado:} Instancia o variable que se inicia con su valor y es alcanzado por alguna instancia ligada que se encuentra en su alcance.
+    \item \textbf{Instancia Libre:} Instancia o variable que no alcanza su valor en una expresión.
+\end{enumerate}
+Por ejemplo:\\
+
+\begin{lstlisting}
+    {with {x {+ 2 2}} {+ x y}}
+\end{lstlisting}
+Donde $x$ es \textbf{Instancia de ligado.}\\
+Donde $x$ en la suma es \textbf{instancia ligada} a una de ligado.\\
+Donde $y$ es una \textbf{Variable libre}.
+
+{\color{blue} \subsubsection*{Indices de Bruijin.}}
+\vspace{-0.5em}
+Es una representación en forma de indices de la forma: $<$profundidad, posición$>$. con \textbf{profundidad} como que nivel es si hay with anidado $0,1,2...$(abajo $\to$ arriba) y \textbf{posición} como el orden de asignación (de izquierda $\to$ derecha $0,1,2...$)\\
+Quita el nombre de las variables, nos quedamos con el valor y el cuerpo si usa alguna variable ponemos su representación en índices. por ejemplo:\\
+
+\begin{lstlisting}
+    {with {x 2}
+        {with {y 3}
+            {+ x y}}}
+\end{lstlisting}
+
+-Quitamos las variables y nos queda:
+
+\begin{lstlisting}
+    {with {2}
+        {with {3}
+            {+ - -}}}
+\end{lstlisting}
+-Ahora en la suma agregamos los indices, para $x$ empezamos desde $0$ (with 3) y subimos a $1$ y llegamos a la $x$ (with 2) y como no hay expresiones de izquierda a derecha es $0$, queda:
+\begin{lstlisting}
+    {with {x 2}
+        {with {y 3}
+            {+ <1,0> -}}}
+\end{lstlisting}
+-Ahora para encontrar $y$ empezamos en la profundidad $0$ (with 3) y ya no buscamos, esa es $y$, tampoco tiene posición que buscar y queda como:
+\begin{lstlisting}
+    {with {x 2}
+        {with {y 3}
+            {+ <1,0> <0,0>}}}
+\end{lstlisting}
+{\color{blue} \subsubsection*{Ambientes.}}
+\vspace{-0.5em}
+Es donde se buscan las variables, nos ayudarán en el algoritmo de sustitución, se representan con lista o pila vacia
+Si tengo wiiths anidados, creo el ambiente 0 y cada asignación la meto al ambiente y los voy extendiendo.\\
+
+{\color{blue} \subsubsection*{Alcance.}}
+\vspace{-0.5em}
+tenemos 2 tipos de alcances, son los siguientes:
+
+\begin{enumerate}
+    \item \textbf{Alcance Dinamico}: Alcance del valor de su uso, la aparición de la variable más cercana.
+    \item \textbf{Alcance Estatico}: Alcance del valor de su definición, orden de aparición
+\end{enumerate}
+Por ejemplo en el siguiente with marcaremos y señalaremos dado el tipo de alcance el valor que tomará:\\
+
+\begin{lstlisting}
+    {with {x 3}
+        {with {foo{fun{z}{+z x}}
+            with{x 7}
+                {foo}}}}
+\end{lstlisting}
+En este ejemplo cuando usamos alcance \textbf{Dinamico} despues de usar los ambientes de ejecución busca en la linea de $+ z x$
+la primera $x$ que encuentra al recorrer la pila o lista, es la $x 7$ y se olvida de la primera.\\
+Mientras que en el alcance \textbf{Estatico} dado todo lo anterior tenemos que tener un tipo de apuntador a la primer aparición de $x$
+para que entonces podamos dada la misma $+ z x$ podamos usar la primer aparición de la variable $x$.
+
+{\color{blue} \subsubsection*{Clasificación de Lenguaje por función.}}
+\vspace{-0.5em}
+\begin{enumerate}
+    \item \textbf{Primer Orden:} Función que no puede ser regresada como valor.
+    \item \textbf{Orden Superior:} Función que puede ser regresada como valor.
+    \item \textbf{Primer Clase:} Función como argumento, valores regresados por funciones como valores y se almacena en una estructura de datos.
+\end{enumerate}
+
+{\color{blue} \subsubsection*{Cerraduras.}}
+\vspace{-0.5em}
+Se utilizan para poder implementar el alcance estatico y lo que hacen es almacenar la información de una función.\\
+-Parametros formales\\
+-Cuerpo de la función\\
+-Ambiente de dicha función\\
+
+\end{document}
