@@ -1,13 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1679738978 "/home/david/semestre_2023/sistemas_operativos/Tareas/tarea3/main.tex" "main.pdf" "main" 1679738978
-  "/home/david/semestre_2023/sistemas_operativos/Tareas/tarea3/main.tex" 1679738977 9329 89b7583aab135aea177a42fc548c696a ""
+["pdflatex"] 1679886071 "/home/david/semestre_2023/sistemas_operativos/notas/examen1-guia/main.tex" "main.pdf" "main" 1679886072
+  "/home/david/semestre_2023/sistemas_operativos/notas/examen1-guia/main.tex" 1679886071 575 04e864afc964cc46cf1fc2510dc8e9ee ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1650183167 1324 c910af8c371558dc20f2d7822f66fe64 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1650183167 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1650183167 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1650183167 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1650183167 32080 340ef9bf63678554ee606688e7b5339d ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1650183167 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1650183167 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1650183167 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1650183167 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -50,9 +48,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1668613036 336600 6f90c65e159aaf8faaa6ea56bf6655c4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668613011 2927660 585043b883a99dc67de3dff5d9b43c36 ""
-  "Portada.pdf" 1679633362 331786 e3bd0dec5d308c15ebfe0b74f0433bf3 ""
-  "main.aux" 1679738978 276 92ab1eaff7066f42596659aa27f4d49d "pdflatex"
-  "main.tex" 1679738977 9329 89b7583aab135aea177a42fc548c696a ""
+  "Portada.pdf" 1679885481 325282 2162a032cabbd3ea893d2734d83b279e ""
+  "main.aux" 1679886072 276 cfded1e150f39fa521d07b9e9460609f "pdflatex"
+  "main.tex" 1679886071 575 04e864afc964cc46cf1fc2510dc8e9ee ""
   (generated)
   "main.aux"
   "main.log"
