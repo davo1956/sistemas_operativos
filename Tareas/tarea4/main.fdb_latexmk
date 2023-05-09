@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1683175309 "/home/david/semestre_2023/sistemas_operativos/Tareas/tarea4/main.tex" "main.pdf" "main" 1683175310 0
-  "/home/david/semestre_2023/sistemas_operativos/Tareas/tarea4/main.tex" 1683175309 3067 742e6ebfe40d8050592fbf1f62c5c0c4 ""
+["pdflatex"] 1683598661 "/home/david/semestre_2023/sistemas_operativos/Tareas/tarea4/main.tex" "main.pdf" "main" 1683598662 0
+  "/home/david/semestre_2023/sistemas_operativos/Tareas/tarea4/main.tex" 1683598661 3151 94582279bbd742c95d0d5fa3825e65f2 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1680514707 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1680514707 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1680514707 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -64,8 +64,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1681265962 336600 6f90c65e159aaf8faaa6ea56bf6655c4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1681265899 8204104 7833c990d65d676da9d1bbc544cc58c3 ""
   "Portada.pdf" 1683172723 331650 08e9293da084a86f2f94dd9b8d7383a7 ""
-  "main.aux" 1683175310 276 1e8aeb2117aa0cfa16d9e2ab6f37284d "pdflatex"
-  "main.tex" 1683175309 3067 742e6ebfe40d8050592fbf1f62c5c0c4 ""
+  "main.aux" 1683598662 276 1e8aeb2117aa0cfa16d9e2ab6f37284d "pdflatex"
+  "main.tex" 1683598661 3151 94582279bbd742c95d0d5fa3825e65f2 ""
   (generated)
   "main.aux"
   "main.log"

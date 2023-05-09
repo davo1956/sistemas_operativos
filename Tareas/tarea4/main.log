@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.11)  3 MAY 2023 22:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.11)  8 MAY 2023 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -328,15 +328,15 @@ LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 6334 strings out of 476025
- 100717 string characters out of 5796532
+ 6341 strings out of 476025
+ 100810 string characters out of 5796532
  1858388 words of memory out of 5000000
- 26725 multiletter control sequences out of 15000+600000
+ 26732 multiletter control sequences out of 15000+600000
  516541 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,17n,65p,262b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on main.pdf (3 pages, 358624 bytes).
+Output written on main.pdf (3 pages, 358898 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
